@@ -1,20 +1,24 @@
 /**
-* HOMEPAGE
+* COMMON
 **/
 
-div.home__container {
+div.container {
     width: 100vh;
     margin: 1rem auto;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     background-color: '#fefefe';
-    color: blue;
+    color: blue; 
 }
 
-.home__title{
+h1.title {
     font-size: 3rem;
     text-align: center;
 }
+
+/**
+* HOMEPAGE
+**/
 
 .home__account{
     display: flex;
@@ -36,3 +40,36 @@ div.home__container {
 * SIGN_UP
 **/
 
+form.signup__container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 30px;
+}
+
+.signup__inputContainer {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.signup__inputContainer>input {
+    margin: 0 10px;
+    padding: 0 10px;
+    border-bottom: 1px solid blue;
+}
+
+.signup__submit {
+    padding: 5px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.signup__submit:hover {
+    color: lightblue;
+}
